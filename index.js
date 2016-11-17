@@ -3,7 +3,6 @@ const restify = require('restify');
 const delegate = require('func-delegate');
 const Router = require('./lib/router');
 
-const DEFAULT_METHODS = ['add', 'list', 'detail', 'remove', 'modify'];
 const Server = restify.createServer().constructor;
 
 const controllerChecker = (ctl, type, names) => {
@@ -29,7 +28,6 @@ const controllerChecker = (ctl, type, names) => {
   });
 };
 
-
 module.exports = delegate(Router, [{
   name: 'server',
   type: Server,
@@ -45,16 +43,6 @@ module.exports = delegate(Router, [{
         }
         controllerChecker(ctl, 'ctls');
       });
-      return true;
-    },
-  },
-}, {
-  name: 'defaults',
-  type: Object,
-  allowNull: true,
-  validate: {
-    check(value) {
-      controllerChecker(value, 'defaults', DEFAULT_METHODS);
       return true;
     },
   },
