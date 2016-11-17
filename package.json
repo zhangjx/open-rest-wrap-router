@@ -1,0 +1,42 @@
+{
+  "name": "open-rest-wrap-router",
+  "version": "0.1.0",
+  "description": "open rest wrap router.",
+  "main": "lib/index.js",
+  "author": "zhangjx1990@gmail.com",
+  "license": "MIT",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangjx/open-rest-wrap-router.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "open-rest",
+    "open-rest-wrap",
+    "router"
+  ],
+  "bugs": {
+    "url": "https://github.com/zhangjx/open-rest-wrap-router/issues"
+  },
+  "homepage": "https://github.com/zhangjx/open-rest-wrap-router",
+  "dependencies": {
+    "async": "2.1.2",
+    "lodash": "4.16.6",
+    "restify": "4.3.0",
+    "func-delegate": "0.2.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.0",
+    "eslint": "^3.8.1",
+    "eslint-config-airbnb-base": "^10.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "nodemon": "^1.11.0"
+  }
+}
